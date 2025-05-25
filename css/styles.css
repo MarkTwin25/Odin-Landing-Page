@@ -2,217 +2,95 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    color:white;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #E5E7EB;
-}
-a:hover{
-    color: pink;
+.page-1{
+    background-color: rgb(32,41,56);
+    height: 80vh;
+    
+    padding: 15px 100px;
 }
 
-.block-1{
-    background-color: #1F2937;
-    display: flex;
-    flex-direction: column;
-}
-
-.block-1 header{
+.page-1 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
-    padding: 20px;
 }
 
-
-.block-1 header h1{
-    font-size: 24px;
-    color: #F9FAF8;
-    margin: 0 auto;
-}
-
-.block-1 header ul{
-    display: flex;
-    gap: 1.1rem;
-    margin: 0 auto;
-}
-
-.main{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:100px;
-    margin-bottom: 30px;
-}
-
-.izq, .der{
-    width: 30%;
-    height: 100%;
-}
-
-.izq{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap:10px;
-}
-
-.izq h1{
-    font-size: 48px;
-    color: #F9FAF8;
-}
-
-.der{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.der img{
-    max-width: 100%;
-}
-
-.btn button{
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #3B82F6;
+.page-1 header .logo{
+    font-size: 1.4rem;;
+    font-weight: 700;
     color: white;
-    font-size: 18px;
-    cursor: pointer;
 }
 
-.block-2{
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.page-1 .links{
     display: flex;
-    flex-direction: column;
+    gap: 25px;
+}
+
+.page-1 .hero{
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    gap:10px;
+    gap: 100px;
+    /* max-width: 900px; */
+
 }
 
-.block-2 h2{
-    color: #1F2937;
-    font-size: 36px;
-    font-weight: 900;
-}
-.block-2 p{
-    color: #1F2937;
-}
-
-.infos .info{
-    width: 15%;
-    text-align: center;
-}
-
-.infos{
+.page-1 .left{
+    flex:1;
     display: flex;
-    justify-content: center;
-    gap:15px;
-    margin-bottom: 50px;
+    flex-direction: column;
 }
 
-.info img{
+.page-1 .left h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.page-1 .left p{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+button{
+    border: none;
+    background-color: rgb(49, 49, 235);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(86, 86, 252, 0.767);
+}
+
+.page-1 .right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page-1 .right img{
+    height: 80%;
     width: 80%;
     border-radius: 20px;
-    border: 2px solid #3882F6;
 }
-
-.block-3{
-    background-color: #E5E7EB;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.block-3 .quote{
-    color: #1F2937;
-    font-size: 36px;
-    font-style: italic;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-.quote div{
-    color: #1F2937;
-    font-size: 18px;
-    align-self: flex-end;
-}
-
-.block-4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-}
-
-.block-4 .action{
-    background-color: #3882F6;
-    border-radius: 10px;
-    width: 70%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.block-4 .action .section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:15px
-}
-
-.section .section-1{
-    width: 80%;
-}
-.section .section-2{
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.section .section-2 button{
-    border: 2px solid white;
-    padding: 5px 15px;
-    background-color: #3882F6;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.section .section-2 button:hover{
-    background-color: grey;
-    color: #F9FAF8;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-footer{
-    background-color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-}
-
-
-
-
