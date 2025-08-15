@@ -80,6 +80,11 @@ header .container ul{
     height: 250px;
     width: 20px;
     background-color: blue;
+    background-image: url('https://i.pinimg.com/1200x/bd/e4/8c/bde48c5bd0864ce236d959c8f6f7d839.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
     flex: 1;
 }
 
